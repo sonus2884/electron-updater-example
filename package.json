@@ -3,7 +3,7 @@
   "version": "0.7.1",
   "main": "main.js",
   "description": "electron-updater example project",
-  "author": "Matt Haggard",
+  "author": "Sonu",
   "scripts": {
     "publish": "build -p always"
   },
@@ -16,7 +16,14 @@
     "electron-updater": "^4.0.6"
   },
   "build": {
-    "appId": "com.github.iffy.electronupdaterexample",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "sonus2884",
+        "repo": "electron-updater-example"
+      }
+    ],
+    "appId": "com.github.sonu.electronupdaterexample",
     "mac": {
       "category": "your.app.category.type",
       "target": [
